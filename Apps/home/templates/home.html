@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colegio</title>
-</head>
-<body>
-    <h1>Pagina princiapl de la app UMG</h1>
-    <a href="">estudiantes</a>
+{% extends 'base.html '%}
 
-</body>
-</html>
+{% block titulo %}
+<h3>HOME</h3>
+{% endblock %}
+
+{% block contenido %}
+    <a href={% url 'home:listado' %}>listado</a>
+{% endblock %}
