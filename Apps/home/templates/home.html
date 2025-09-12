@@ -1,0 +1,9 @@
+{% extends 'base.html '%}
+
+{% block titulo %}
+<h3>HOME</h3>
+{% endblock %}
+
+{% block contenido %}
+    <a href={% url 'home:listado' %}>listado</a>
+{% endblock %}
